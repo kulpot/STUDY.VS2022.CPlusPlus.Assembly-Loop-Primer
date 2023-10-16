@@ -20,13 +20,6 @@ doit proc
 
 
 
-
-
-
-
-
-
-
 	ret
 
 	; ---- Programming the Scientific Version's Expression Tree -----
