@@ -11,8 +11,12 @@ doit proc
 	; this is a comment i can type whatever i like after a semicolon and assembler will ignore it
 	
 	; ---- Assembly Loop Primer -----
-
-
+	; 1 + 2 + 3 + 4 + 5 = 15
+	mov eax, 1
+	add eax, 2
+	add eax, 3
+	add eax, 4
+	add eax, 5
 
 
 
