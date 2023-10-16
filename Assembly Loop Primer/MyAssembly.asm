@@ -10,22 +10,11 @@ doit proc
 
 	; this is a comment i can type whatever i like after a semicolon and assembler will ignore it
 	
-	; ---- Programming the Scientific Version's Expression Tree -----
-	; 3 * 4 + 6 / 2 + 2 * 5
-	; scientific, 25 is the result for scientific calc
+	; ---- Assembly Loop Primer -----
 
-	mov eax, 3
-	mov ebx, 4
-	mul ebx				; 3 * 4 = 12 -> eax		0000000C
-	mov ecx, eax		; 12 -> ecx				0000000C	; needed to mov for div
-	mov eax, 6
-	mov ebx, 2
-	div ebx				; 6 / 2 = 3 -> eax
-	add ecx, eax		; 12 + 3 = 15 -> ecx	0000000F
-	mov eax, 2
-	mov ebx, 5
-	mul ebx				; 2 * 5 = 10 -> eax		0000000A
-	add eax, ecx		; 15 + 10 = 25 -> eax	00000019
+
+
+
 
 
 
@@ -35,6 +24,27 @@ doit proc
 
 
 	ret
+
+	; ---- Programming the Scientific Version's Expression Tree -----
+	; 3 * 4 + 6 / 2 + 2 * 5
+	; scientific, 25 is the result for scientific calc
+
+	;mov eax, 3
+	;mov ebx, 4
+	;mul ebx				; 3 * 4 = 12 -> eax		0000000C
+	;mov ecx, eax		; 12 -> ecx				0000000C	; needed to mov for div
+	;mov eax, 6
+	;mov ebx, 2
+	;div ebx				; 6 / 2 = 3 -> eax
+	;add ecx, eax		; 12 + 3 = 15 -> ecx	0000000F
+	;mov eax, 2
+	;mov ebx, 5
+	;mul ebx				; 2 * 5 = 10 -> eax		0000000A
+	;add eax, ecx		; 15 + 10 = 25 -> eax	00000019
+
+
+
+	;ret
 
 	; ---- Optimizing the Previous Code Using Immediate Values ----
 
