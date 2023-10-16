@@ -15,8 +15,8 @@ doit proc
 	mov eax, 1
 	add eax, 2
 	add eax, 3
-	add eax, 4
-	add eax, 5
+	add eax, 4		; 10	;0000000A
+	add eax, 5		; 15	;0000000F
 
 
 
